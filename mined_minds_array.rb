@@ -5,8 +5,15 @@ def create_mined_minds_array()
 	number = 1
 	100.times do 
 
-		if  number == 3
+		if number % 15 == 0
+			mined_minds_array << 'mined_minds'
+
+		elsif number % 3 == 0
 			mined_minds_array << 'mined'
+
+		elsif number % 5 == 0
+			mined_minds_array << 'minds'
+
 		else
 			#push an item into the array
 			mined_minds_array << number
