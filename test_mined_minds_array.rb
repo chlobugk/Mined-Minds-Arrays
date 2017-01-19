@@ -18,11 +18,17 @@ class TestMMFunctions < Minitest::Test
 	
 	def test_3_returns_mined()
 		results = create_mined_minds_array()
-		assert_equal('mined', results[2])
+		assert_equal('mined', results[2]) #w/ arrays 1 is 0, so 3 is 2
 	end
 
 	def test_5_returns_minds()
 		results = create_mined_minds_array()
 		assert_equal('minds', results[4])
 	end
+
+	def test_15_returns_mined_minds()
+		results = create_mined_minds_array
+		assert_equal('mined_minds', results[14])
+	end
+
 end
