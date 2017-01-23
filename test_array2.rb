@@ -36,6 +36,11 @@ class TestMMFunctions < Minitest::Test
 		assert_equal('mined_minds', results[15-1])
 	end
 
+	def test_60_returns_mined_minds
+		results = create_100_element_array
+		assert_equal('mined_minds', results[60-1])
+	end
+
 end
 
 
